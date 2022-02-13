@@ -91,7 +91,7 @@ void	check_len(char **arr_map, unsigned long int c_str)
 	}
 }
 
-void	valid_map_arg(int fd)
+char	**valid_map_arg(int fd)
 {
 	char	**arr_map;
 	char	*one_str;
@@ -110,4 +110,5 @@ void	valid_map_arg(int fd)
 	check_len(arr_map, i);
 	check_player_exit(arr_map);
 	check_valid_symbol(arr_map, i);
+	return (arr_map);
 }

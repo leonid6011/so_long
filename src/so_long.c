@@ -2,6 +2,11 @@
 
 int	main(int argc, char **argv)
 {
+	t_game_data	data;
+	char		**arr_map;
+
 	valid_arg(argc, argv);
-	init_map(argv);
+	arr_map = init_map(argv);
+	init_data(&data, arr_map);
+	init_game(&data);
 }

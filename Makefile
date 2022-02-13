@@ -2,7 +2,8 @@ NAME 	= so_long
 CC		= gcc
 CFLAGS	= -Wall -Werror -Wextra
 SRCS	= src/so_long.c src/validation.c libft/ft_atoi.c libft/ft_putstr_fd.c libft/ft_strrchr.c libft/ft_strncmp.c\
-			get_next_line/get_next_line.c get_next_line/get_next_line_utils.c src/init_map.c src/validation2.c
+			get_next_line/get_next_line.c get_next_line/get_next_line_utils.c src/init.c src/validation2.c\
+			src/move.c
 
 OBJ		= $(SRCS:%.c=%.o)
 
